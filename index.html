@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>TopCompany</title>
+	<link rel="icon" type="image/ico" href="image/titleicon.png" />
+	<link rel="reset" href="css/reset.css">
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<!-- Easy Tree Plugin -->
+	<link rel="stylesheet" href="css/easyTree.css">
+	<script src="js/easyTree.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<main class="wrapper">
+	<header class="page-heading">Top Companies</header>
+	<!-- Companies Tree -->
+	<div class="easy-tree">
+		<ul></ul>
+	</div>
+</main>
+<script>
+(function($){
+	function init() {
+		$('.easy-tree').EasyTree({
+			deletable: true,
+			editable: true,
+			addable: true,
+            i18n: {
+                deleteNull: 'Виберіть компанію',
+                deleteConfirmation: 'Дійсно видалити цю компанію?',
+                confirmButtonLabel: 'Так',
+                editNull: 'Виберіть компанію для видалення',
+                editMultiple: 'Ви можете редагували лише одну компанію',
+                addMultiple: 'Виберіть компанію щоб додати нову',
+                collapseTip: 'Collapse',
+                expandTip: 'Show subsidiary company',
+                selectTip: 'Вибрати',
+                unselectTip: 'Скасувати',
+                editTip: 'Редагувати',
+                addTip: 'Додати',
+                deleteTip: 'Видалити',
+                cancelButtonLabel: 'Скасувати'
+            }
+		});
+	}
+	window.onload = init();
+})(jQuery)
+</script>
+</body>
+</html> 

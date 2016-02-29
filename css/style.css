@@ -1,0 +1,19 @@
+body {
+    background-image:url("../image/bodybackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+}
+.wrapper {
+	height: 600px;
+ 	background:rgba(255,255,255,0.9);
+ 	margin: auto;
+    width: 60%;
+    border: 3px solid #453329;
+    padding: 10px;
+}
+.page-heading{
+	text-align: center;
+	border-bottom: 3px solid #453329;
+	padding-bottom: 3px;
+}
